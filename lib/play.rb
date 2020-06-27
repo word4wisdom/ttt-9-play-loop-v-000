@@ -35,15 +35,17 @@ def turn(board)
   else
     turn(board)
   end
+end
 
 
 def play(board)
   counter = 0 
-  while counter < 10 
+  while counter < 9 
     turn(board)
     counter += 1 
-  end
-# build a `#play` method for Tic Tac Toe that initiates a simple loop and calls `#turn
+   end
+ end
+# build a`#play` method for Tic Tac Toe that initiates a simple loop and calls `#turn
 # #play` method will initiate a loop that (runs 9 times), simulating an entire game.
 # * Accept an argument of a `board`.
 # Start a loop and call `#turn`.
