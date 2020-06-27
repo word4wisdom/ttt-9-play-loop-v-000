@@ -9,10 +9,12 @@ end
 
 def input_to_index(user_input)
   user_input.to_i - 1
+  end
 end
 
 def move(board, index, current_player = "X")
   board[index] = current_player
+  end
 end
 
 def position_taken?(board, location)
@@ -33,10 +35,15 @@ def turn(board)
   else
     turn(board)
   end
-end
+
 
 def play(board)
-9.times {turn(board)}
-end
-
-
+  counter = 0 
+  while counter < 10 
+    turn(board)
+    counter += 1 
+  end
+# build a `#play` method for Tic Tac Toe that initiates a simple loop and calls `#turn
+# #play` method will initiate a loop that (runs 9 times), simulating an entire game.
+# * Accept an argument of a `board`.
+# Start a loop and call `#turn`.
